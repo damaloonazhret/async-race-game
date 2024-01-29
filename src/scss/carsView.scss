@@ -1,0 +1,122 @@
+.cars-view {
+  padding-top: 0.5vw;
+  color: white;
+  * {
+    font-size: 1.5vw;
+  }
+
+  &__header {
+    color: white;
+    font-size: 2vw;
+  }
+
+  &__page {
+    color: white;
+    font-size: 1.5vw;
+    padding-top: 1vw;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: repeat(2, 3vw);
+    grid-template-columns: 8vw 8vw 82vw;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 0.1vw solid white;
+    position: relative;
+  }
+
+  &__page-next, &__page-prev {
+    width: 3vw;
+    font-size: 1vw;
+  }
+
+  &__page-next {
+    &:after {
+      content: '>';
+    }
+  }
+  &__page-prev {
+    &:after {
+      content: '<';
+    }
+  }
+
+  &__flag {
+    position: relative;
+    &:after {
+      content: '🏲';
+      position: absolute;
+      right: -20vw;
+      top: -3vw;
+      display: block;
+      width: 4vw;
+      height: 4vw;
+      font-size: 4vw;
+    }
+    grid-row: 2 / 3;
+  }
+
+  &__select-btn, &__remove-btn, &__name {
+    grid-row: 1 / 2;
+    font-size: 1.3vw;
+    border: none;
+  }
+
+  &__name, &__car-logo {
+    justify-self: start;
+  }
+
+  &__car-logo {
+    //transition: 1s;
+    position: absolute;
+    left: 14vw;
+    top: -0.3vw;
+  }
+
+  &__select-btn, &__remove-btn {
+    background-color: #ffffff;
+    justify-self: center;
+    align-self: center;
+    width: 5vw;
+    height: 1.5vw;
+    font-size: 1vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+
+  &__car-logo {
+    display: block;
+    background-image: url('../../assets/logo.png');
+    background-color: green;
+    background-size: cover;
+    width: 11vw;
+    height: 3vw;
+    grid-row: 2 / 3;
+  }
+
+  &__start-btn, &__stop-btn {
+    width: 2vw;
+    height: 2vw;
+    background-color: green;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    grid-row: 2 / 3;
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
+

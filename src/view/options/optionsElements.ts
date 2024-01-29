@@ -1,0 +1,41 @@
+export const body = document.querySelector('body') as HTMLBodyElement;
+export const navWrapper = document.createElement('nav') as HTMLDivElement;
+export const toGarage = document.createElement('button') as HTMLButtonElement;
+export const toWinners = document.createElement('button') as HTMLButtonElement;
+export const grid = document.createElement('div');
+export const raceContent = document.createElement('main');
+export const carsView = document.createElement('div');
+export const carsViewHeader = document.createElement('div');
+export const carsViewPageContainer = document.createElement('div');
+export const carsViewPage = document.createElement('div');
+export const carsViewPageNext = document.createElement('button');
+export const carsViewPagePrev = document.createElement('button');
+export const gridRow1 = document.createElement('div');
+export const gridRow2 = document.createElement('div');
+export const gridRow3 = document.createElement('div');
+export const raceBtn = document.createElement('button');
+export const resetBtn = document.createElement('button');
+export const generateBtn = document.createElement('button');
+export const createInputCar = document.createElement(`input`);
+export const createColorCar = document.createElement(`button`);
+export const createCarButton = document.createElement(`button`);
+export const updateInputCar = document.createElement(`input`);
+export const updateColorCar = document.createElement(`button`);
+export const updateCarButton = document.createElement(`button`);
+
+export const playMusicButtonOn = document.createElement('button');
+export const playMusicButtonOff = document.createElement('button');
+
+export const winnersCount = document.createElement('div');
+export const winnersPage = document.createElement('div');
+export const winnersPageBtnPrev = document.createElement('button');
+export const winnersPageBtnNext = document.createElement('button');
+export const winnersGrid = document.createElement('div');
+
+export const winnersGridRow1 = document.createElement('div');
+export const winnersGridRow2 = document.createElement('div');
+export const winnersGridRow3 = document.createElement('div');
+export const winnersGridRow4 = document.createElement('div');
+export const winnersGridRow5 = document.createElement('div');
+export const winnersGridRow6 = document.createElement('div');
+export const winnersGridRow7 = document.createElement('div');
